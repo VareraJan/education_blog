@@ -9,7 +9,7 @@
     "allowJs": true,
     "moduleResolution": "node",
     // для абсолютного импорта
-    "baseUrl": ".",
+    // "baseUrl": ".",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   },
