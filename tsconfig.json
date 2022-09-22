@@ -5,7 +5,7 @@
     "module": "ESNext",
     // в какую версию компилируем: для поддержки большинства браузеров
     "target": "es5",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     // для абсолютного импорта
