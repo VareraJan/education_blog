@@ -12,11 +12,6 @@
     // "baseUrl": ".",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
-    //   "plugins": [
-    //     {
-    //       "name": "typescript-plugin-css-modules"
-    //     }
-    //   ]
   },
   "ts-node": {
     "compilerOptions": {
