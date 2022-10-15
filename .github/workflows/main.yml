@@ -1,15 +1,16 @@
-name: Pipeline for linting, testing, building
+name: linting, testing, building
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
-    branches: [ master ]
+    branches: [ master, module_3 ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, module_3 ]
 jobs:
   pipeline:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 16.x ]
+        node-version: [ 17.x ]
 
     steps:
       - uses: actions/checkout@v2
@@ -19,21 +20,15 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: install modules
         run: npm install
-      - name: build production version
+      - name: build production project
         run: npm run build:prod
-        if: always()
-      - name: typescript linting
+      - name: linting typescript
         run: npm run lint:ts
-        if: always()
-      - name: scss linting
+      - name: linting css
         run: npm run lint:scss
-        if: always()
-      - name: unit testing
+      - name: unit linting
         run: npm run test:unit
-        if: always()
       - name: build storybook
         run: npm run storybook:build
-        if: always()
-      - name: ui testing
+      - name: screenshot testing
         run: npm run test:ui:ci
-        if: always()
