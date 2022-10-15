@@ -7,10 +7,10 @@ on:
     branches: [ master, module_3 ]
 jobs:
   pipeline:
-    runs-on: windows-latest
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
-        node-version: [ 16.x ]
+        node-version: [ 17.x ]
 
     steps:
       - uses: actions/checkout@v2
