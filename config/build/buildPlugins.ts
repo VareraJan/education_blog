@@ -19,11 +19,17 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
         }),
     ];
 
+    // для анализа бандла в продсборке раскоментировать код ниже
+    // аналогичный код в условии isDev  закоментировать
+    // plagins.push(new BundleAnalyzerPlugin({
+    //     openAnalyzer: false,
+    // }));
+
     if (isDev) {
         plagins.push(new webpack.HotModuleReplacementPlugin());
-        plagins.push(new webpack.HotModuleReplacementPlugin(new BundleAnalyzerPlugin({
+        plagins.push(new BundleAnalyzerPlugin({
             openAnalyzer: false,
-        })));
+        }));
     }
 
     return plagins;
