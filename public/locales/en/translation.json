@@ -6,7 +6,7 @@
   "throw error": "throw error",
   "refresh page": "refresh page",
   "Главная": "Home",
-  "О нас": "About us",
+  "О сайте": "About us",
   "Переключить": "Toggle",
   "Короткий язык": "En",
   "Войти": "LogIn",
@@ -16,5 +16,7 @@
   "Введите пароль": "Enter password",
   "авторизация": "Authorization form",
   "Вы ввели неверный логин или пароль": "Incorrect username or password",
-  "Выйти": "LogOut"
+  "Выйти": "LogOut",
+  "Профиль": "Profile",
+  "Страница профиля": "PROFILE PAGE"
 }

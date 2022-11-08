@@ -3,6 +3,8 @@
   "Lorem ipsum, dolor sit amet consectetur adipisicing elit": {
     "\n                 Enim in sapiente, placeat necessitatibus pariatur cupiditate assumenda \n                 ipsa ullam earum ea qui eaque distinctio beatae quibusdam non dolore \n                 voluptas vero suscipit!": ""
   },
+  "PROFILE PAGE": "",
+  "ProfilePage": "",
   "decrement": "",
   "increment": "",
   "refresh page": "",
@@ -22,7 +24,9 @@
   "Обновить страницу": "",
   "Переключить": "",
   "Произошла непредвиденная ошибка": "",
+  "Профиль": "",
   "Страница не найдена": "",
+  "Страница профиля": "",
   "Язык": "",
   "авторизация": ""
 }
