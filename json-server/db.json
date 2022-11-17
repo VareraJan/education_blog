@@ -1,12 +1,32 @@
 {
   "posts": [
-    { "id": "1", "title": "json-server", "author": "typicode" },
-    { "id": "2", "title": "json-server 1", "author": "typicode" },
-    { "id": "3", "title": "json-server 2", "author": "typicode" },
-    { "id": "4", "title": "json-server 3", "author": "typicode" }
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "2",
+      "title": "json-server 1",
+      "author": "typicode"
+    },
+    {
+      "id": "3",
+      "title": "json-server 2",
+      "author": "typicode"
+    },
+    {
+      "id": "4",
+      "title": "json-server 3",
+      "author": "typicode"
+    }
   ],
   "comments": [
-    { "id": "1", "body": "some comment", "postId": "1" }
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
   ],
   "users": [
     {
@@ -15,14 +35,14 @@
       "password": "123"
     }
   ],
-  "profile": { 
-    "firs": "Валерий",
+  "profile": {
+    "first": "Валерий",
     "lastname": "Журавлёв",
-    "age": 22,
+    "age": 11,
     "currency": "RUB",
-    "country": "Russia",
+    "country": "Russian",
     "city": "Moscow",
     "username": "admin",
     "avatar": "https://klike.net/uploads/posts/2019-03/1551511801_1.jpg"
-   }
+  }
 }
