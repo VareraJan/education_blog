@@ -29,7 +29,7 @@ Primary.args = {
         first: 'Andrey',
         city: 'London',
         currency: Currency.RUB,
-        avatar,
+        avatar: 'https://klike.net/uploads/posts/2019-03/1551511801_1.jpg',
     },
 };
 
