@@ -120,13 +120,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://klike.net/uploads/posts/2019-03/1551511801_1.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://klike.net/uploads/posts/2019-03/1551511801_1.jpg"
     }
   ],
   "profile": {
