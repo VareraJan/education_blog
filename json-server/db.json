@@ -21,7 +21,7 @@
       "author": "typicode"
     }
   ],
-   "articles": [
+  "articles": [
     {
       "id": "1",
       "title": "Javascript news",
@@ -29,7 +29,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -91,7 +93,7 @@
         }
       ]
     }
-   ],
+  ],
   "comments": [
     {
       "id": "1",
@@ -113,6 +115,36 @@
       "postId": "1",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123",
+      "id": "53EPO8K"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123rty",
+      "id": "pN4cuGA"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "fufuf",
+      "id": "TFzssHu"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "hi world!",
+      "id": "So4gp2F"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "17171",
+      "id": "GRtLo76"
     }
   ],
   "users": [
@@ -128,17 +160,31 @@
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://klike.net/uploads/posts/2019-03/1551511801_1.jpg"
+      "avatar": "https://tiktok-wiki.ru/wp-content/uploads/2020/05/avatarki-dlya-tik-toka2.jpg"
     }
   ],
-  "profile": {
-    "first": "Валерий",
-    "lastname": "Журавлёв",
-    "age": 11,
-    "currency": "RUB",
-    "country": "Russian",
-    "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://klike.net/uploads/posts/2019-03/1551511801_1.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Валерий",
+      "lastname": "Журавлёв",
+      "age": 11,
+      "currency": "RUB",
+      "country": "Russian",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://klike.net/uploads/posts/2019-03/1551511801_1.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Alina",
+      "lastname": "Zhuravleva",
+      "age": 11,
+      "currency": "RUB",
+      "country": "Russian",
+      "city": "Moscow",
+      "username": "user",
+      "avatar": "https://tiktok-wiki.ru/wp-content/uploads/2020/05/avatarki-dlya-tik-toka2.jpg"
+    }
+  ]
 }
