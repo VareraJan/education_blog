@@ -12,6 +12,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { AddCommentForm } from 'features/addCommentForm';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { Page } from 'shared/ui/Page/Page';
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
 import { getArticleCommentsError, getArticleCommentsIsLoading } from '../../model/selectors/comments';
 import { articleDetailsCommentsReducer, getArticleComments } from '../../model/slices/articleDetailsCommentsSlice';
@@ -51,15 +52,15 @@ const ArticleDetailsPage: React.FC<ArticleDetailsPageProps> = (props) => {
 
     if (!id) {
         return (
-            <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+            <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
                 {t('Статья не найдена')}
-            </div>
+            </Page>
         );
     }
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+            <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
                 <Button theme={ButtonTheme.OUTLINE} onClick={onBackToList}>
                     {t('Назад к списку')}
                 </Button>
@@ -70,7 +71,7 @@ const ArticleDetailsPage: React.FC<ArticleDetailsPageProps> = (props) => {
                     comments={comments}
                     isLoading={commentsIsLoading}
                 />
-            </div>
+            </Page>
         </DynamicModuleLoader>
     );
 };
