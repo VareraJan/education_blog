@@ -1,5 +1,5 @@
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
-import { fetchArticlesLists } from '../fetchArticlesLists/fetchArticlesLists';
+import { fetchArticlesList } from '../fetchArticlesLists/fetchArticlesLists';
 import { fetchNextArticlePage } from './fetchNextArticlePage';
 
 jest.mock('../fetchArticlesLists/fetchArticlesLists');
@@ -20,7 +20,7 @@ describe('fetchProfileData.test', () => {
         await thunk.callThunk();
 
         expect(thunk.dispatch).toBeCalledTimes(4);
-        expect(fetchArticlesLists).toHaveBeenCalledWith({ page: 3 });
+        expect(fetchArticlesList).toHaveBeenCalledWith({ page: 3 });
     });
 
     test('fetchArticleList not called', async () => {
@@ -38,7 +38,7 @@ describe('fetchProfileData.test', () => {
         await thunk.callThunk();
 
         expect(thunk.dispatch).toBeCalledTimes(2);
-        expect(fetchArticlesLists).not.toHaveBeenCalled();
+        expect(fetchArticlesList).not.toHaveBeenCalled();
     });
 
     test('isLoading', async () => {
@@ -56,6 +56,6 @@ describe('fetchProfileData.test', () => {
         await thunk.callThunk();
 
         expect(thunk.dispatch).toBeCalledTimes(2);
-        expect(fetchArticlesLists).not.toHaveBeenCalled();
+        expect(fetchArticlesList).not.toHaveBeenCalled();
     });
 });
