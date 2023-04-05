@@ -13,6 +13,7 @@ export const ArticleEditForm = memo((props: articleEditFormProps) => {
     const { t } = useTranslation();
 
     return (
+        // eslint-disable-next-line i18next/no-literal-string
         <div className={classNames(cls.articleEditForm, {}, [className])}>
             articleEditForm
         </div>
