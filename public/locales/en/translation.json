@@ -40,5 +40,9 @@
   "Экономика": "Ecomomics",
   "Наука": "Science",
   "Статьи не найдены": "Articles not found",
-  "Рекомендуем": "Recommended"
+  "Рекомендуем": "Recommended",
+  "Редактировать": "Edit",
+  "Редактирование статьи с ID = ": "Editing an article with ID = ",
+  "Создание новой статьи": "Create a new article",
+  "Создать статью": "Create article"
 }
