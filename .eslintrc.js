@@ -44,12 +44,12 @@ module.exports = {
         'import/no-extraneous-dependencies': 'warn',
         'max-len': ['error', {
             ignoreComments: true,
-            code: 120,
+            code: 125,
         }],
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'name'],
+            ignoreAttribute: ['data-testid', 'to', 'name', 'target'],
         }],
         // семантика, позже поправить
         'jsx-a11y/no-static-element-interactions': 'off',
@@ -60,6 +60,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
+        'arrow-body-style': 'off',
     },
     globals: {
         __IS_DEV__: true,
