@@ -33,7 +33,7 @@ Secondary.args = {
 export const Red = Template.bind({});
 Red.args = {
     children: 'TEXT',
-    theme: AppLinkTheme,
+    theme: AppLinkTheme.RED,
 };
 
 export const PrimaryDark = Template.bind({});
@@ -51,6 +51,6 @@ SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
 export const RedDark = Template.bind({});
 RedDark.args = {
     children: 'TEXT',
-    theme: AppLinkTheme,
+    theme: AppLinkTheme.RED,
 };
 RedDark.decorators = [ThemeDecorator(Theme.DARK)];

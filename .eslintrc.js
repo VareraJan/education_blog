@@ -44,12 +44,12 @@ module.exports = {
         'import/no-extraneous-dependencies': 'warn',
         'max-len': ['error', {
             ignoreComments: true,
-            code: 100,
+            code: 125,
         }],
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to'],
+            ignoreAttribute: ['data-testid', 'to', 'name', 'target'],
         }],
         // семантика, позже поправить
         'jsx-a11y/no-static-element-interactions': 'off',
@@ -57,9 +57,15 @@ module.exports = {
 
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+        'no-param-reassign': 'off',
+        'no-undef': 'off',
+        'react/no-array-index-key': 'off',
+        'arrow-body-style': 'off',
     },
     globals: {
         __IS_DEV__: true,
+        __API__: true,
+        __PROJECT__: true,
     },
     overrides: [{
         files: ['**/src/**/*.{test,stories}.{ts,tsx}'],

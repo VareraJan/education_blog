@@ -7,6 +7,7 @@
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
+    "strict": true,
     "moduleResolution": "node",
     // для абсолютного импорта
     "baseUrl": ".",
@@ -24,6 +25,6 @@
   "include": [
     "./config/jest/setupTest.ts",
     "./src/**/*.ts",
-    "./src/**/*.tsx",
+    "./src/**/*.tsx", "src/features/addCommentForm/model/services/sendComment",
   ],
 }
