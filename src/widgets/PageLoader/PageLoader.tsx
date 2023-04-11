@@ -1,6 +1,6 @@
 import React from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Loader } from '../Loader/Loader';
+import { Loader } from 'shared/ui/Loader/Loader';
 import cls from './PageLoader.module.scss';
 
 interface PageLoaderProps {

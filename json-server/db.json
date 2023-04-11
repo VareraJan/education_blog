@@ -572,6 +572,12 @@
       "userId": "1",
       "text": "11222",
       "id": "DrhT5fg"
+    },
+    {
+      "articleId": "13",
+      "userId": "1",
+      "text": "const path = require('path');  const server = jsonServer.create();  const router = jsonServer.router(path.resolve(__dirname, 'db.json'));  server.use(jsonServer.defaults({})); server.use(jsonServer.bodyParser);",
+      "id": "5vKF7vg"
     }
   ],
   "users": [
