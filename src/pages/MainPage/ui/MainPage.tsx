@@ -16,18 +16,19 @@ const MainPage = () => {
         <Page>
             {t('Главная страница')}
             <HStack>
-              <div>asdada</div>
-              <ListBox
-                defaultValue='Выберите значение'
-                onChange={(value: string) => {console.log(value);
-                }}
-                value={undefined}
-                items={[
-                  {value: '1', content: '123'},
-                  {value: '12', content: 'asfs', disabled: true},
-                  {value: '123', content: '123ADDR'},
-                ]}
-              />
+                <div>asdada</div>
+                <ListBox
+                    defaultValue="Выберите значение"
+                    onChange={(value: string) => {
+                        console.log(value);
+                    }}
+                    value={undefined}
+                    items={[
+                        { value: '1', content: '123' },
+                        { value: '12', content: 'asfs', disabled: true },
+                        { value: '123', content: '123ADDR' },
+                    ]}
+                />
             </HStack>
             <div>asdada</div>
             <div>asdada</div>

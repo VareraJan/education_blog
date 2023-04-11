@@ -65,6 +65,7 @@
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.6.6",
+    "eslint-plugin-varera-jan-plugin": "file:../../eslint-plugin-varerajan-plugin",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "5.5.0",
     "husky": "^8.0.0",

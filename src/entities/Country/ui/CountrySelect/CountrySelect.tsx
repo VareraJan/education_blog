@@ -32,27 +32,15 @@ export const CountrySelect = memo((props: CountrySelectProps) => {
     }, [onChange]);
 
     return (
-      <ListBox 
-        readonly={readonly}
-        className={classNames('', {}, [className])}
-        onChange={onChangeHandler}
-        defaultValue={t('Укажите страну')}
-        label={t('Укажите страну')}
-        value={value}
-        items={options}
-        direction='top'
-      />
-    )
-
-    // return (
-    //     <Select
-    //         className={classNames('', {}, [className])}
-    //         label={t('Укажите страну')}
-    //         options={options}
-    //         value={value}
-    //         onChange={onChangeHandler}
-    //         readonly={readonly}
-    //     />
-
-    // );
+        <ListBox
+            readonly={readonly}
+            className={classNames('', {}, [className])}
+            onChange={onChangeHandler}
+            defaultValue={t('Укажите страну')}
+            label={t('Укажите страну')}
+            value={value}
+            items={options}
+            direction="top"
+        />
+    );
 });

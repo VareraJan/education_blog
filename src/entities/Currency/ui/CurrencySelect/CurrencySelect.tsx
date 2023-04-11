@@ -30,15 +30,15 @@ export const CurrencySelect = memo((props: CurrencySelectProps) => {
     }, [onChange]);
 
     return (
-      <ListBox 
-        readonly={readonly}
-        className={classNames('', {}, [className])}
-        onChange={onChangeHandler}
-        defaultValue={t('Укажите валюту')}
-        label={t('Укажите валюту')}
-        value={value}
-        items={options}
-        direction='top'
-      />
-    )
+        <ListBox
+            readonly={readonly}
+            className={classNames('', {}, [className])}
+            onChange={onChangeHandler}
+            defaultValue={t('Укажите валюту')}
+            label={t('Укажите валюту')}
+            value={value}
+            items={options}
+            direction="top"
+        />
+    );
 });
