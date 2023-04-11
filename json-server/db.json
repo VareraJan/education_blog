@@ -578,6 +578,24 @@
       "userId": "1",
       "text": "const path = require('path');  const server = jsonServer.create();  const router = jsonServer.router(path.resolve(__dirname, 'db.json'));  server.use(jsonServer.defaults({})); server.use(jsonServer.bodyParser);",
       "id": "5vKF7vg"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123",
+      "id": "Q7QfGc0"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "11",
+      "id": "ammZOg-"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "222",
+      "id": "1Vqdanf"
     }
   ],
   "users": [

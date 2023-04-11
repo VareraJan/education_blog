@@ -50,7 +50,16 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'name', 'target'],
+            ignoreAttribute: [
+                'data-testid',
+                'to',
+                'name',
+                'target',
+                'justify',
+                'align',
+                'direction',
+                'gap',
+            ],
         }],
         // семантика, позже поправить
         'jsx-a11y/no-static-element-interactions': 'off',

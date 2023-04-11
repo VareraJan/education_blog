@@ -1,6 +1,7 @@
 import { HTMLAttributeAnchorTarget, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
+import { HStack } from 'shared/ui/Stack';
 import { Text, TextSize } from 'shared/ui/Text/Text';
 import { Article, ArticleView } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
@@ -41,18 +42,18 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
     if (!isLoading && !articles.length) {
         return (
-            <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
+            <HStack max className={classNames('', {}, [className, cls[view]])}>
                 <Text size={TextSize.L} title={t('Статьи не найдены')} />
-            </div>
+            </HStack>
         );
     }
 
     return (
-        <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
+        <HStack max className={classNames('', {}, [className, cls[view]])}>
             {articles.length > 0
                 ? articles.map(renderArticle)
                 : null}
             {isLoading && getSkeleton(view)}
-        </div>
+        </HStack>
     );
 });
