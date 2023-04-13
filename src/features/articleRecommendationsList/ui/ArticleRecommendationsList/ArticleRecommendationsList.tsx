@@ -15,7 +15,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
     const { t } = useTranslation();
     const { isLoading, data: articles, error } = useArticleRecommendationList(3);
     // временная заглушка
-    if (isLoading || error) {
+    if (isLoading || error || !articles) {
         return null;
     }
 
