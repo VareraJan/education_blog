@@ -46,5 +46,8 @@
   "Создание новой статьи": "Create a new article",
   "Создать статью": "Create article",
   "Ошибка при загрузке статей": "Error loading articles",
-  "Профиль не найден": "Profile not found"
+  "Профиль не найден": "Profile not found",
+  "Админ панель": "Admin panel",
+  "Админка": "AdminPanel",
+  "У вас нет доступа к этой странице": "You do not have access to this page"
 }
