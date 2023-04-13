@@ -62,6 +62,7 @@ module.exports = {
                 'role',
                 'as',
                 'defaultValue',
+                'refName',
             ],
         }],
         // семантика, позже поправить

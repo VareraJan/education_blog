@@ -44,5 +44,7 @@
   "Редактировать": "Edit",
   "Редактирование статьи с ID = ": "Editing an article with ID = ",
   "Создание новой статьи": "Create a new article",
-  "Создать статью": "Create article"
+  "Создать статью": "Create article",
+  "Ошибка при загрузке статей": "Error loading articles",
+  "Профиль не найден": "Profile not found"
 }

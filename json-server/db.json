@@ -617,11 +617,11 @@
   "profile": [
     {
       "id": "1",
-      "first": "Валерий",
+      "first": "Валерий II",
       "lastname": "Журавлёв",
-      "age": 11,
-      "currency": "USD",
-      "country": "Belarus",
+      "age": 23,
+      "currency": "RUB",
+      "country": "Russian",
       "city": "Moscow",
       "username": "admin",
       "avatar": "https://klike.net/uploads/posts/2019-03/1551511801_1.jpg"
