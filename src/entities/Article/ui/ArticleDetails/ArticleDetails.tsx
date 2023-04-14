@@ -23,10 +23,14 @@ import {
 import {
     ArticleCodeBlockComponent,
 } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent/ArticleCodeBlockComponent';
+import {
+    ArticleImageBlockComponent,
+} from '../ArticleImageBlockComponent/ArticleImageBlockComponent/ArticleImageBlockComponent';
+import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent/ArticleTextBlockComponent';
 
 interface ArticleDetailsProps {
   className?: string;
-  id: string;
+  id?: string;
 }
 
 const reducers: ReducersList = {
@@ -52,22 +56,22 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
                     block={block}
                 />
             );
-        // case ArticleBlockType.IMAGE:
-        //     return (
-        //         <ArticleImageBlockComponent
-        //             key={block.id}
-        //             className={cls.block}
-        //             block={block}
-        //         />
-        //     );
-        // case ArticleBlockType.TEXT:
-        //     return (
-        //         <ArticleTextBlockComponent
-        //             key={block.id}
-        //             className={cls.block}
-        //             block={block}
-        //         />
-        //     );
+        case ArticleBlockType.IMAGE:
+            return (
+                <ArticleImageBlockComponent
+                    key={block.id}
+                    className={cls.block}
+                    block={block}
+                />
+            );
+        case ArticleBlockType.TEXT:
+            return (
+                <ArticleTextBlockComponent
+                    key={block.id}
+                    className={cls.block}
+                    block={block}
+                />
+            );
         default:
             return null;
         }
