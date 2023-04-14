@@ -661,6 +661,17 @@
       "city": "Moscow",
       "username": "user",
       "avatar": "https://tiktok-wiki.ru/wp-content/uploads/2020/05/avatarki-dlya-tik-toka2.jpg"
+    },
+    {
+      "id": "3",
+      "first": "Konoko",
+      "lastname": "Zhuravleva",
+      "age": 23,
+      "currency": "RUB",
+      "country": "Russian",
+      "city": "Moscow",
+      "username": "user",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFApwoHlNKr6D7LruOwmj2iW8-GmPGY9d5JQ&usqp=CAU"
     }
   ]
 }
