@@ -3,8 +3,9 @@ import { Listbox as HListBox } from '@headlessui/react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { DropdownDirection } from 'shared/types/ui';
 import cls from './ListBox.module.scss';
-import { Button } from '../Button/Button';
-import { HStack } from '../Stack';
+import popupCls from '../../styles/popup.module.scss';
+import { Button } from '../../../Button/Button';
+import { HStack } from '../../../Stack';
 
 export interface ListBoxItem {
   value: string;
@@ -35,19 +36,19 @@ export function ListBox(props: ListBoxProps) {
         label,
     } = props;
 
-    const optionsClasses = [cls[direction]];
+    const optionsClasses = [popupCls[direction]];
 
     return (
         <HStack gap="4">
-            {label && <span className={classNames('', { [cls.disabled]: readonly }, [])}>{`${label}>`}</span>}
+            {label && <span className={classNames('', { [popupCls.disabled]: readonly }, [])}>{`${label}>`}</span>}
             <HListBox
                 disabled={readonly}
                 as="div"
-                className={classNames(cls.ListBox, {}, [className])}
+                className={classNames('', {}, [className, popupCls.popup])}
                 value={value}
                 onChange={onChange}
             >
-                <HListBox.Button disabled={readonly} className={cls.trigger}>
+                <HListBox.Button disabled={readonly} className={popupCls.trigger}>
                     <Button disabled={readonly}>
                         {value ?? defaultValue}
                     </Button>
@@ -66,8 +67,8 @@ export function ListBox(props: ListBoxProps) {
                                     className={classNames(
                                         cls.item,
                                         {
-                                            [cls.active]: active,
-                                            [cls.disabled]: item.disabled,
+                                            [popupCls.active]: active,
+                                            [popupCls.disabled]: item.disabled,
                                         },
                                     )}
                                 >

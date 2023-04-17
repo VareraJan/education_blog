@@ -64,6 +64,7 @@ module.exports = {
                 'defaultValue',
                 'refName',
                 'fallback',
+                'border',
             ],
         }],
         // семантика, позже поправить
