@@ -37,12 +37,12 @@ module.exports = {
         'no-unused-vars': 'warn',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
-        'react/jsx-props-no-spreading': 'off', // 'warn' ??
+        'react/jsx-props-no-spreading': 'off',
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'linebreak-style': 'off',
         'import/extensions': 'off',
-        'import/no-extraneous-dependencies': 'warn',
+        'import/no-extraneous-dependencies': 'off',
         'max-len': ['error', {
             ignoreComments: true,
             code: 125,
