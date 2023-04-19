@@ -51,5 +51,8 @@
   "Админка": "AdminPanel",
   "У вас нет доступа к этой странице": "You do not have access to this page",
   "Ваш отзыв": "Your feedback",
-  "Закрыть": "Close"
+  "Закрыть": "Close",
+  "Оставьте свой отзыв о статье, это поможет улучшить качество": "Leave your feedback about the article, it will help improve the quality",
+  "Оцените статью": "Rate the article",
+  "Спасибо за оценку!": "Thank you for rating!"
 }

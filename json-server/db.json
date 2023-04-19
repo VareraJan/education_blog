@@ -707,5 +707,77 @@
       "username": "user",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFApwoHlNKr6D7LruOwmj2iW8-GmPGY9d5JQ&usqp=CAU"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "11",
+      "rate": 5,
+      "feedback": "",
+      "id": "BmMRNeq"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 3,
+      "feedback": "фигня какая-то",
+      "id": "VY5attE"
+    },
+    {
+      "userId": "1",
+      "articleId": "13",
+      "rate": 4,
+      "id": "Ir94kkR"
+    },
+    {
+      "userId": "1",
+      "articleId": "12",
+      "rate": 1,
+      "feedback": "отстой",
+      "id": "PSDWGTf"
+    },
+    {
+      "userId": "1",
+      "articleId": "10",
+      "rate": 5,
+      "id": "zLc60Yt"
+    },
+    {
+      "userId": "1",
+      "articleId": "9",
+      "rate": 2,
+      "feedback": "ok",
+      "id": "Q3hg0RK"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Молоток",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Няшка",
+      "userId": "1",
+      "profileId": "2"
+    }
   ]
 }
