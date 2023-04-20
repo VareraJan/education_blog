@@ -34,20 +34,20 @@ module.exports = {
         }],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
-        'no-unused-vars': 'warn',
+        'no-unused-vars': 'off',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
-        'react/jsx-props-no-spreading': 'off',
+        'react/jsx-props-no-spreading': 'warn',
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
-        'linebreak-style': 'off',
         'import/extensions': 'off',
+        'no-underscore-dangle': 'off',
         'import/no-extraneous-dependencies': 'off',
+        'linebreak-style': 'off',
         'max-len': ['error', {
             ignoreComments: true,
             code: 125,
         }],
-        'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
             ignoreAttribute: [
@@ -78,6 +78,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'varera-jan-plugin/path-checker': ['error', { alias: '@' }],
+        'varera-jan-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
