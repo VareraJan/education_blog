@@ -26,12 +26,11 @@ const reducers: ReducersList = {
 const ArticlesPage: React.FC<ArticlesPageProps> = (props) => {
     const { className } = props;
     const dispatch = useAppDispatch();
+    const [searchParams] = useSearchParams();
 
     const onLoadNextPart = useCallback(() => {
         dispatch(fetchNextArticlePage());
     }, [dispatch]);
-
-    const [searchParams] = useSearchParams();
 
     useInitialEffect(() => {
         dispatch(initArticlesPage(searchParams));

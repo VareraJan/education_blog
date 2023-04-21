@@ -1,5 +1,4 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import React from 'react';
 
 import { NotificationItem } from './NotificationItem';
 
@@ -14,4 +13,11 @@ export default {
 const Template: ComponentStory<typeof NotificationItem> = (args) => <NotificationItem {...args} />;
 
 export const Normal = Template.bind({});
-Normal.args = {};
+Normal.args = {
+    item: {
+        id: '1',
+        title: 'Title',
+        description: 'Desriptios',
+        userId: '1',
+    },
+};
