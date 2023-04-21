@@ -1,9 +1,10 @@
-import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from 'react';
 
 import { ArticleView } from '../../model/consts/consts';
-import { ArticleList } from './ArticleList';
 import { Article } from '../../model/types/article';
+
+import { ArticleList } from './ArticleList';
 
 export default {
     title: 'entities/Article/ArticleList',

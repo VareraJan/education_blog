@@ -6,6 +6,8 @@ module.exports = {
     },
     extends: [
         'plugin:react/recommended',
+        'eslint:recommended',
+        'plugin:import/recommended',
         'airbnb',
         'plugin:i18next/recommended',
         'plugin:storybook/recommended',
@@ -24,6 +26,8 @@ module.exports = {
         'i18next',
         'react-hooks',
         'varera-jan-plugin',
+        'unused-imports',
+        'import',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -35,6 +39,7 @@ module.exports = {
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'off',
+        'unused-imports/no-unused-imports': 'error',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
@@ -90,6 +95,23 @@ module.exports = {
             {
                 alias: '@',
                 testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
+        'import/order': [
+            'error',
+            {
+                pathGroups: [
+                    {
+                        pattern: '@/**',
+                        group: 'internal',
+                        position: 'after',
+                    },
+                ],
+                'newlines-between': 'always',
+                alphabetize: {
+                    order: 'asc',
+                    caseInsensitive: false,
+                },
             },
         ],
     },

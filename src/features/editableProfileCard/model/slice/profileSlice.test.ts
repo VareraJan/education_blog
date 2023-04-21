@@ -1,9 +1,11 @@
+import { ValidateProfileError } from '../consts/consts';
+import { updateProfileData } from '../service/updateProfileData/updateProfileData';
+import { ProfileSchema } from '../types/editableProfileCardSchema';
+
+import { profileActions, profileReducer } from './profileSlice';
+
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
-import { updateProfileData } from '../service/updateProfileData/updateProfileData';
-import { profileActions, profileReducer } from './profileSlice';
-import { ProfileSchema } from '../types/editableProfileCardSchema';
-import { ValidateProfileError } from '../consts/consts';
 
 const data = {
     username: 'admin',

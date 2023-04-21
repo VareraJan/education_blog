@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { classNames } from '@/shared/lib/classNames/classNames';
+
 import { Button } from '@/shared/ui/Button';
 
 /** component for testing ErrorBoundary !!! */
