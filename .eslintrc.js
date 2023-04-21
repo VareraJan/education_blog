@@ -78,11 +78,18 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'varera-jan-plugin/path-checker': ['error', { alias: '@' }],
+        'varera-jan-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'varera-jan-plugin/public-api-imports': [
             'error',
             {
                 alias: '@',
-                testFilesPatterns: ['**/*.testing.*', '**/*.stories.*', '**/storeDecorator.tsx'],
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
             },
         ],
     },
