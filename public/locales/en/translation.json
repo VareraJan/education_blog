@@ -29,14 +29,14 @@
   "Сортировать по": "Sort by",
   "Поиск": "Search",
   "Статьи": "Articles",
-  "по": "by" ,
+  "по": "by",
   "возрастанию": "ascending",
   "убыванию": "descending",
   "дате создания": "creation date",
   "названию": "name",
   "просмотрам": "views",
   "Все статьи": "All",
-  "Айти" : "IT",
+  "Айти": "IT",
   "Экономика": "Ecomomics",
   "Наука": "Science",
   "Статьи не найдены": "Articles not found",
@@ -54,5 +54,6 @@
   "Закрыть": "Close",
   "Оставьте свой отзыв о статье, это поможет улучшить качество": "Leave your feedback about the article, it will help improve the quality",
   "Оцените статью": "Rate the article",
-  "Спасибо за оценку!": "Thank you for rating!"
+  "Спасибо за оценку!": "Thank you for rating!",
+  "add5": "add five"
 }
