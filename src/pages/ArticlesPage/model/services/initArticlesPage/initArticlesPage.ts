@@ -8,7 +8,7 @@ import { fetchArticlesList } from '../fetchArticlesLists/fetchArticlesLists';
 
 import { ThunkConfig } from '@/app/providers/StoreProvider';
 import { ArticleSortField, ArticleType } from '@/entities/Article';
-import { SortOrder } from '@/shared/types';
+import { SortOrder } from '@/shared/types/sort';
 
 export const initArticlesPage = createAsyncThunk<
   void,
