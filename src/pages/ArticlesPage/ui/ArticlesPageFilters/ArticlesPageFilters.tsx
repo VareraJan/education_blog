@@ -7,13 +7,15 @@ import {
 } from '../../model/selectors/articlesPageSelectors';
 import { fetchArticlesList } from '../../model/services/fetchArticlesLists/fetchArticlesLists';
 import { articlesPageActions } from '../../model/slices/articlesPageSlice';
-import { ArticleTypeTabs } from '../ArticleTypeTabs/ArticleTypeTabs';
 
 import cls from './ArticlesPageFilters.module.scss';
 
 import {
-    ArticleSortField, ArticleSortSelector, ArticleType, ArticleView, ArticleViewSelector,
+    ArticleSortField, ArticleType, ArticleView,
 } from '@/entities/Article';
+import { ArticleSortSelector } from '@/features/ArticleSortSelector';
+import { ArticleTypeTabs } from '@/features/ArticleTypeTabs';
+import { ArticleViewSelector } from '@/features/ArticleViewSelector';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useDebounce } from '@/shared/lib/hooks/useDebounce/useDebounce';

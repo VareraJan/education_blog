@@ -1,9 +1,8 @@
 import { memo } from 'react';
 
-import { ArticleView } from '../../model/consts/consts';
-
 import cls from './ArticleViewSelector.module.scss';
 
+import { ArticleView } from '@/entities/Article';
 import ListIcon from '@/shared/assets/icons/list_24x24.svg';
 import TiledIcon from '@/shared/assets/icons/tiled_24x24.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';

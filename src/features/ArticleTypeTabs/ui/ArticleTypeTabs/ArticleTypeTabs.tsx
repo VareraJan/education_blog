@@ -15,7 +15,7 @@ export const ArticleTypeTabs = memo((props: ArticleTypeTabsProps) => {
     const { className, value, onChangeType } = props;
     const { t } = useTranslation();
 
-    // маленький массив можно прописать руками, если большой то стандартно мапаем
+    // маленький массив можно прописать руками, если большой, то стандартно мапаем
     const typeTabs = useMemo<TabItem[]>(() => [
         {
             value: ArticleType.ALL,
