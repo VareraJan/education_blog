@@ -671,6 +671,15 @@
         "MANAGER"
       ],
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFApwoHlNKr6D7LruOwmj2iW8-GmPGY9d5JQ&usqp=CAU"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://avatars.githubusercontent.com/u/24587348?v=4"
     }
   ],
   "profile": [
@@ -706,6 +715,17 @@
       "city": "Moscow",
       "username": "user",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFApwoHlNKr6D7LruOwmj2iW8-GmPGY9d5JQ&usqp=CAU"
+    },
+    {
+      "id": "4",
+      "first": "Test",
+      "lastname": "testovich",
+      "age": 77,
+      "currency": "RUB",
+      "country": "Russian",
+      "city": "Moscow",
+      "username": "testuser",
+      "avatar": "https://avatars.githubusercontent.com/u/24587348?v=4"
     }
   ],
   "article-ratings": [
