@@ -547,6 +547,136 @@
           "code": "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);"
         }
       ]
+    },
+    {
+      "title": "Наука в мире Больших Данных",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "bCnQYhR"
+    },
+    {
+      "title": "Наука в мире Больших Данных",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "8nQBGn7"
+    },
+    {
+      "title": "Наука в мире Больших Данных",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "jwkbUMm"
+    },
+    {
+      "title": "Наука в мире Больших Данных",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "zu6WTmb"
+    },
+    {
+      "title": "Наука в мире Больших Данных",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "3es50Da"
+    },
+    {
+      "title": "Наука в мире Больших Данных",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "TptuJ31"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "ba9dOdU"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "DUbDu7M"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "N-M9ebK"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "DataScience и BigData",
+      "img": "https://248006.selcdn.ru/main/iblock/d86/d86c59bc9ca3b0a5736d02d862feed4a/1326672a1efd7cdaa3c113dcf0758fa1.jpg",
+      "views": 7643,
+      "createdAt": "11.07.2021",
+      "userId": "1",
+      "type": [
+        "SCIENSE"
+      ],
+      "blocks": [],
+      "id": "630PBXk"
     }
   ],
   "comments": [
@@ -642,6 +772,12 @@
       "userId": "3",
       "text": "1",
       "id": "Q09HX_N"
+    },
+    {
+      "articleId": "DUbDu7M",
+      "userId": "4",
+      "text": "text",
+      "id": "oYox2yE"
     }
   ],
   "users": [
@@ -718,14 +854,14 @@
     },
     {
       "id": "4",
-      "first": "Test",
-      "lastname": "testovich",
-      "age": 77,
-      "currency": "RUB",
-      "country": "Russian",
+      "first": "test",
+      "lastname": "user",
+      "age": 465,
+      "currency": "EUR",
+      "country": "Ukraine",
       "city": "Moscow",
       "username": "testuser",
-      "avatar": "https://avatars.githubusercontent.com/u/24587348?v=4"
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "article-ratings": [

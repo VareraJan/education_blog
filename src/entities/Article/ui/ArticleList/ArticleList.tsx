@@ -55,7 +55,11 @@ export const ArticleList = memo((props: ArticleListProps) => {
     }
 
     return (
-        <HStack max className={classNames('', {}, [className, cls[view]])}>
+        <HStack
+            max
+            className={classNames('', {}, [className, cls[view]])}
+            data-testid="ArticleList"
+        >
             {articles.length > 0
                 ? articles.map(renderArticle)
                 : null}
