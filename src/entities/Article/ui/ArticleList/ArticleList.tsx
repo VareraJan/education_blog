@@ -9,7 +9,7 @@ import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkele
 import cls from './ArticleList.module.scss';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { HStack } from '@/shared/ui/Stack';
+import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text, TextSize } from '@/shared/ui/Text';
 
 interface ArticleListProps {
@@ -18,7 +18,6 @@ interface ArticleListProps {
   isLoading?: boolean;
   view?: ArticleView;
   target?: HTMLAttributeAnchorTarget;
-  // virtualized?: boolean;
 }
 
 const getSkeleton = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)
@@ -32,9 +31,10 @@ export const ArticleList = memo((props: ArticleListProps) => {
         view = ArticleView.SMALL,
         isLoading,
         target,
-        // virtualized = true,
     } = props;
     const { t } = useTranslation();
+
+    const Stack = view === ArticleView.SMALL ? HStack : VStack;
 
     const renderArticle = (article: Article) => (
         <ArticleListItem
@@ -48,14 +48,14 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
     if (!isLoading && !articles.length) {
         return (
-            <HStack max className={classNames('', {}, [className, cls[view]])}>
+            <Stack max className={classNames('', {}, [className, cls[view]])}>
                 <Text size={TextSize.L} title={t('Статьи не найдены')} />
-            </HStack>
+            </Stack>
         );
     }
 
     return (
-        <HStack
+        <Stack
             max
             className={classNames('', {}, [className, cls[view]])}
             data-testid="ArticleList"
@@ -64,6 +64,6 @@ export const ArticleList = memo((props: ArticleListProps) => {
                 ? articles.map(renderArticle)
                 : null}
             {isLoading && getSkeleton(view)}
-        </HStack>
+        </Stack>
     );
 });
