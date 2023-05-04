@@ -11,7 +11,9 @@ export default {
     },
 } as ComponentMeta<typeof ArticleEditForm>;
 
-const Template: ComponentStory<typeof ArticleEditForm> = (args) => <ArticleEditForm {...args} />;
+const Template: ComponentStory<typeof ArticleEditForm> = (args) => (
+    <ArticleEditForm {...args} />
+);
 
 export const Normal = Template.bind({});
 Normal.args = {};

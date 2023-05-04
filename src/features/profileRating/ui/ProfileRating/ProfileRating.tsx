@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 interface ProfileRatingProps {
-  className?: string;
+    className?: string;
 }
 
 export const ProfileRating = memo((props: ProfileRatingProps) => {
@@ -11,8 +11,6 @@ export const ProfileRating = memo((props: ProfileRatingProps) => {
 
     return (
         // eslint-disable-next-line i18next/no-literal-string
-        <div className={className}>
-            PROFILE RATING
-        </div>
+        <div className={className}>PROFILE RATING</div>
     );
 });

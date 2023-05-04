@@ -12,7 +12,7 @@ import { Icon } from '@/shared/ui/Icon';
 import { Popover } from '@/shared/ui/Popups';
 
 interface NotificationsButtonProps {
-  className?: string;
+    className?: string;
 }
 
 export const NotificationsButton = memo((props: NotificationsButtonProps) => {
@@ -35,7 +35,9 @@ export const NotificationsButton = memo((props: NotificationsButtonProps) => {
         <div>
             <BrowserView>
                 <Popover
-                    className={classNames(cls.NotificationsButton, {}, [className])}
+                    className={classNames(cls.NotificationsButton, {}, [
+                        className,
+                    ])}
                     direction="bottomLeft"
                     trigger={trigger}
                 >
@@ -49,6 +51,5 @@ export const NotificationsButton = memo((props: NotificationsButtonProps) => {
                 </Drawer>
             </MobileView>
         </div>
-
     );
 });

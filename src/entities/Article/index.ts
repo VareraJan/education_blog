@@ -5,7 +5,10 @@ export { ArticleList } from './ui/ArticleList/ArticleList';
 export { ArticleDetails } from './ui/ArticleDetails/ArticleDetails';
 
 export {
-    ArticleSortField, ArticleType, ArticleView, ArticleBlockType,
+    ArticleSortField,
+    ArticleType,
+    ArticleView,
+    ArticleBlockType,
 } from './model/consts/consts';
 
 export type { Article } from './model/types/article';

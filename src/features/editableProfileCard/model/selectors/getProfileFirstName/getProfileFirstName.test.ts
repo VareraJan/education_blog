@@ -24,7 +24,7 @@ describe('getProfileFirstName.test', () => {
     });
 
     test('should work with empty state', () => {
-        const state: DeepPartial<StateSchema> = { };
+        const state: DeepPartial<StateSchema> = {};
         expect(getProfileFirstName(state as StateSchema)).toEqual('');
     });
 });

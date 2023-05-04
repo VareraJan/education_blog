@@ -8,18 +8,16 @@ import StarIcon from '@/shared/assets/icons/star.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
 interface StarRatingProps {
-  className?: string;
-  onSelect?: (starsCount: number) => void;
-  size?: number;
-  selectedStars?: number;
+    className?: string;
+    onSelect?: (starsCount: number) => void;
+    size?: number;
+    selectedStars?: number;
 }
 
 const stars = [1, 2, 3, 4, 5];
 
 export const StarRating = memo((props: StarRatingProps) => {
-    const {
-        className, size = 30, selectedStars = 0, onSelect,
-    } = props;
+    const { className, size = 30, selectedStars = 0, onSelect } = props;
 
     const [currentStarsCount, setCurrentStarsCount] = useState(selectedStars);
     const [isSelected, setIsSecelted] = useState(Boolean(selectedStars));
@@ -51,7 +49,9 @@ export const StarRating = memo((props: StarRatingProps) => {
                     className={classNames(
                         cls.starIcon,
                         {
-                            [currentStarsCount >= starNumber ? cls.hovered : cls.normal]: true,
+                            [currentStarsCount >= starNumber
+                                ? cls.hovered
+                                : cls.normal]: true,
                             [cls.selected]: isSelected,
                         },
                         [],

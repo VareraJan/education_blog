@@ -11,13 +11,15 @@ export const BugButton: React.FC = () => {
     const onThrow = () => setError(true);
 
     useEffect(() => {
-        if (error) { throw new Error(); }
+        if (error) {
+            throw new Error();
+        }
     }, [error]);
 
     return (
         <Button
             onClick={onThrow}
-        // eslint-disable-next-line i18next/no-literal-string
+            // eslint-disable-next-line i18next/no-literal-string
         >
             {t('throw error')}
         </Button>

@@ -9,8 +9,8 @@ import { Card, CardTheme } from '@/shared/ui/Card';
 import { Text } from '@/shared/ui/Text';
 
 interface NotificationItemProps {
-  className?: string;
-  item: Notification;
+    className?: string;
+    item: Notification;
 }
 
 export const NotificationItem = memo((props: NotificationItemProps) => {

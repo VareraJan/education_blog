@@ -14,7 +14,9 @@ export default {
     },
 } as ComponentMeta<typeof ArticleList>;
 
-const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
+const Template: ComponentStory<typeof ArticleList> = (args) => (
+    <ArticleList {...args} />
+);
 
 const article = {
     id: '1',
@@ -28,9 +30,7 @@ const article = {
         username: 'admin',
         avatar: 'https://klike.net/uploads/posts/2019-03/1551511801_1.jpg',
     },
-    type: [
-        'IT',
-    ],
+    type: ['IT'],
     blocks: [
         {
             id: '1',
@@ -109,23 +109,18 @@ LoadingSmall.args = {
 
 export const ListBig = Template.bind({});
 ListBig.args = {
-    articles: new Array(16)
-        .fill(0)
-        .map((item, index) => ({
-            ...article,
-            id: String(index),
-        })),
+    articles: new Array(16).fill(0).map((item, index) => ({
+        ...article,
+        id: String(index),
+    })),
     view: ArticleView.BIG,
 };
 
 export const ListSmall = Template.bind({});
 ListSmall.args = {
-    articles:
-      new Array(16)
-          .fill(0)
-          .map((item, index) => ({
-              ...article,
-              id: String(index),
-          })),
+    articles: new Array(16).fill(0).map((item, index) => ({
+        ...article,
+        id: String(index),
+    })),
     view: ArticleView.SMALL,
 };

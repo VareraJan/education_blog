@@ -7,7 +7,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { Page } from '@/widgets/Page';
 
 interface NotFoundPageProps {
-  className?: string;
+    className?: string;
 }
 
 export const NotFoundPage: React.FC<NotFoundPageProps> = (props) => {
@@ -15,7 +15,10 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = (props) => {
     const { t } = useTranslation();
 
     return (
-        <Page data-testid="NotFoundPage" className={classNames(cls.NotFoundPage, {}, [className])}>
+        <Page
+            data-testid="NotFoundPage"
+            className={classNames(cls.NotFoundPage, {}, [className])}
+        >
             {t('Страница не найдена')}
         </Page>
     );

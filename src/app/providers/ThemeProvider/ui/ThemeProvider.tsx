@@ -5,11 +5,12 @@ import { ThemeContext } from '../../../../shared/lib/context/ThemeContext';
 import { LOCAL_STORAGE_THEME_KEY } from '@/shared/const/localstorage';
 import { Theme } from '@/shared/const/theme';
 
-const defaultTheme = (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
+const defaultTheme =
+    (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
 
 interface ThemeProviderProps {
-  initialTheme?: Theme;
-  children: ReactNode;
+    initialTheme?: Theme;
+    children: ReactNode;
 }
 
 const ThemeProvider = (props: ThemeProviderProps) => {
@@ -25,7 +26,11 @@ const ThemeProvider = (props: ThemeProviderProps) => {
         [theme],
     );
 
-    return <ThemeContext.Provider value={defaultProps}>{children}</ThemeContext.Provider>;
+    return (
+        <ThemeContext.Provider value={defaultProps}>
+            {children}
+        </ThemeContext.Provider>
+    );
 };
 
 export default ThemeProvider;

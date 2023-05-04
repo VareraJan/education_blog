@@ -13,10 +13,10 @@ export default {
     },
 } as ComponentMeta<typeof AdminPanelPage>;
 
-const Template: ComponentStory<typeof AdminPanelPage> = (args) => <AdminPanelPage {...args as any} />;
+const Template: ComponentStory<typeof AdminPanelPage> = (args) => (
+    <AdminPanelPage {...(args as any)} />
+);
 
 export const Normal = Template.bind({});
-Normal.args = {
-
-};
+Normal.args = {};
 Normal.decorators = [StoreDecorator({})];

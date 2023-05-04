@@ -10,8 +10,8 @@ describe('Пользователь заходит на страницу стат
     afterEach(() => {
         cy.removeArticle(currentArticleId);
     });
-    describe('Работа с API', () => { });
-    describe('Работа на фикстурах (стабах)', () => { });
+    describe('Работа с API', () => {});
+    describe('Работа на фикстурах (стабах)', () => {});
 
     it('И видит содержание статьи', () => {
         cy.getByTestId('ArticleDetails.Info').should('exist');
@@ -34,7 +34,9 @@ describe('Пользователь заходит на страницу стат
     });
     it('И ставит оценку (пример с табом на фикстурах)', () => {
         const starsCount = 4;
-        cy.intercept('GET', '**/articles/*', { fixture: 'article-details.json' });
+        cy.intercept('GET', '**/articles/*', {
+            fixture: 'article-details.json',
+        });
         cy.getByTestId('ArticleDetails.Info');
         cy.getByTestId('RatingCard').scrollIntoView();
         cy.setRate(starsCount, 'feedback');

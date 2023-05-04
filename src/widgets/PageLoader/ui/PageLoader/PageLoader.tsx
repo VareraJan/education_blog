@@ -6,7 +6,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { Loader } from '@/shared/ui/Loader';
 
 interface PageLoaderProps {
-  className?: string;
+    className?: string;
 }
 
 export const PageLoader: React.FC<PageLoaderProps> = (props) => {

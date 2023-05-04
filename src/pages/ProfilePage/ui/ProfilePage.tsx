@@ -8,7 +8,7 @@ import { VStack } from '@/shared/ui/Stack';
 import { Page } from '@/widgets/Page';
 
 interface ProfilePageProps {
-  className?: string;
+    className?: string;
 }
 
 const ProfilePage: React.FC<ProfilePageProps> = (props) => {
@@ -18,7 +18,10 @@ const ProfilePage: React.FC<ProfilePageProps> = (props) => {
     const { id } = useParams<{ id: string }>();
 
     return (
-        <Page data-testid="ProfilePage" className={classNames('', {}, [className])}>
+        <Page
+            data-testid="ProfilePage"
+            className={classNames('', {}, [className])}
+        >
             <VStack gap="16" max>
                 <EditableProfileCard id={id} />
             </VStack>

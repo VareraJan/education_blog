@@ -8,8 +8,8 @@ import cls from './Code.module.scss';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
 interface CodeProps {
-  className?: string;
-  text: string;
+    className?: string;
+    text: string;
 }
 
 export const Code = memo((props: CodeProps) => {
@@ -28,9 +28,7 @@ export const Code = memo((props: CodeProps) => {
             >
                 <CopyIcon className={cls.copyIcon} />
             </Button>
-            <code>
-                {text}
-            </code>
+            <code>{text}</code>
         </pre>
     );
 });

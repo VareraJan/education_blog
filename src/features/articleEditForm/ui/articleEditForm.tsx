@@ -6,7 +6,7 @@ import cls from './articleEditForm.module.scss';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
 interface articleEditFormProps {
-  className?: string;
+    className?: string;
 }
 
 // TODO Форма создания статьи

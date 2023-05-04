@@ -27,22 +27,13 @@ export const Counter: React.FC = () => {
     return (
         <div>
             <h1 data-testid="value-title">{counterValue}</h1>
-            <Button
-                onClick={handleAddFive}
-                data-testid="increment-btn5"
-            >
+            <Button onClick={handleAddFive} data-testid="increment-btn5">
                 {t('add5')}
             </Button>
-            <Button
-                onClick={handleIncrement}
-                data-testid="increment-btn"
-            >
+            <Button onClick={handleIncrement} data-testid="increment-btn">
                 {t('increment')}
             </Button>
-            <Button
-                onClick={handleDecrement}
-                data-testid="decrement-btn"
-            >
+            <Button onClick={handleDecrement} data-testid="decrement-btn">
                 {t('decrement')}
             </Button>
         </div>

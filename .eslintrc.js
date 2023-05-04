@@ -11,6 +11,7 @@ module.exports = {
         'airbnb',
         'plugin:i18next/recommended',
         'plugin:storybook/recommended',
+        'prettier',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -30,9 +31,9 @@ module.exports = {
         'import',
     ],
     rules: {
-        'react/jsx-indent': [2, 4],
-        'react/jsx-indent-props': [2, 4],
-        indent: [2, 4],
+        // 'react/jsx-indent': [2, 4],
+        // 'react/jsx-indent-props': [2, 4],
+        // indent: [2, 4],
         'react/jsx-filename-extension': [2, {
             extensions: ['.js', '.jsx', '.tsx'],
         }],
@@ -51,7 +52,7 @@ module.exports = {
         'linebreak-style': 'off',
         'max-len': ['error', {
             ignoreComments: true,
-            code: 125,
+            code: 130,
         }],
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
@@ -114,6 +115,7 @@ module.exports = {
                 },
             },
         ],
+        'react/jsx-max-props-per-line': ['error', { maximum: 4 }]
     },
     globals: {
         __IS_DEV__: true,

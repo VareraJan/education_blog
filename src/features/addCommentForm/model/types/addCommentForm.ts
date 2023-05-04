@@ -1,4 +1,4 @@
 export interface AddCommentFormShema {
-  text?: string;
-  error?: string;
+    text?: string;
+    error?: string;
 }

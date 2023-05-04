@@ -9,16 +9,14 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
 
 interface PopoverProps {
-  className?: string;
-  direction?: DropdownDirection;
-  trigger: ReactNode;
-  children: ReactNode;
+    className?: string;
+    direction?: DropdownDirection;
+    trigger: ReactNode;
+    children: ReactNode;
 }
 
 export function Popover(props: PopoverProps) {
-    const {
-        className, trigger, direction = 'bottomRight', children,
-    } = props;
+    const { className, trigger, direction = 'bottomRight', children } = props;
 
     const menuClasses = [popupCls[direction]];
     return (
@@ -29,9 +27,7 @@ export function Popover(props: PopoverProps) {
                 {trigger}
             </HPopover.Button>
 
-            <HPopover.Panel
-                className={classNames(cls.panel, {}, menuClasses)}
-            >
+            <HPopover.Panel className={classNames(cls.panel, {}, menuClasses)}>
                 {children}
             </HPopover.Panel>
         </HPopover>

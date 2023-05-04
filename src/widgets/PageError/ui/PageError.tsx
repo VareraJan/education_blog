@@ -7,7 +7,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { Button } from '@/shared/ui/Button';
 
 interface PageErrorProps {
-  className?: string;
+    className?: string;
 }
 
 export const PageError: React.FC<PageErrorProps> = (props) => {
@@ -22,11 +22,7 @@ export const PageError: React.FC<PageErrorProps> = (props) => {
     return (
         <div className={classNames(cls.PageError, {}, [className])}>
             <p>{t('Произошла непредвиденная ошибка')}</p>
-            <Button
-                onClick={reloadPage}
-            >
-                {t('Обновить страницу')}
-            </Button>
+            <Button onClick={reloadPage}>{t('Обновить страницу')}</Button>
         </div>
     );
 };

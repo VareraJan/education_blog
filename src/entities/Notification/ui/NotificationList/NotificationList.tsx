@@ -11,7 +11,7 @@ import { Skeleton } from '@/shared/ui/Skeleton';
 import { VStack } from '@/shared/ui/Stack';
 
 interface NotificationListProps {
-  className?: string;
+    className?: string;
 }
 
 export const NotificationList = memo((props: NotificationListProps) => {
